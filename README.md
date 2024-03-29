@@ -56,8 +56,6 @@ This is a simple web application for managing PDF files. Users can upload, view,
 - ![Screenshot (578)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/f3155425-0bbd-49db-bb7d-11ebc563efb4)
 - Then login into account
 - ![Screenshot (570)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/316ebd21-c74e-4ee3-9d83-bc7547a6b98d)
-- Give name of the file name and select the want to upload
-- ![Screenshot (572)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/687eacc1-fdc7-43b9-b0f5-30d091ccb5c3)
 - Now we can see visual representation of pdf and click on to upload which stores pdf file on server
 - ![Screenshot (573)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/52baf70b-7030-443b-aea5-a5e8b7af6020)
 - here on scroll down we can see the page number with checkbox to toggle and untoggle,select what pages you want to select and extract from this pdf file.
