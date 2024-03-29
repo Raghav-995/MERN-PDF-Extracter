@@ -5,6 +5,7 @@ import axios from "axios";
 import Navbar from './Navbar';
 import { usePdfContext } from '../context/PdfContext';
 
+
 function Home() {
   const [pdfArrayBuffer, setPdfArrayBuffer] = useState(null);
   const [title, setTitle] = useState("");

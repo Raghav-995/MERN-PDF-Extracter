@@ -14,7 +14,24 @@ function Signup() {
   // Function to handle user registration
   async function registerUser(event) {
     event.preventDefault();
+    if (email.length === 0 || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+      
+      alert('Invalid email! Please enter a valid email.');
+  
+      return
+    }
 
+    // check if the password follows constraints or not.
+
+    // if password length is less than 8 characters, alert invalid form.
+
+    if (password.length < 6) {
+      alert(
+        'Invalid password, Password must contain greater than or equal to 6 characters.',
+      );
+    
+      return
+    }
     // Send a POST request to the server for user registration
     const response = await fetch("http://localhost:9000/api/register", {
       method: "POST",

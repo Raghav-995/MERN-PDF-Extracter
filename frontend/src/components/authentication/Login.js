@@ -1,15 +1,36 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+   
   // Function to handle user login
   async function loginUser(event) {
     event.preventDefault();
 
+    if (email.length === 0 || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+      
+      alert('Invalid email! Please enter a valid email.');
+      toast.success('Error in email');
+      return
+    }
+
+    // check if the password follows constraints or not.
+
+    // if password length is less than 8 characters, alert invalid form.
+
+    if (password.length < 6) {
+      alert(
+        'Invalid password, Password must contain greater than or equal to 6 characters.',
+      );
+      toast.error('Error in password!');
+      return
+    }
+   
     // Send a POST request to the server for user login
     const response = await fetch("http://localhost:9000/api/login", {
       method: "POST",
@@ -40,7 +61,7 @@ function Login() {
     <div className="login min-h-screen flex items-center justify-center bg-blue-400">
       <div className="max-w-md w-full p-8 bg-white shadow-lg rounded-md">
         <h1 className="text-3xl text-center font-semibold mb-4">Login</h1>
-
+        
         <form onSubmit={loginUser}>
           <input
             value={email}
@@ -50,7 +71,7 @@ function Login() {
             }}
             placeholder="Email"
             className="w-full p-2 mb-4 border rounded-md"
-          />
+          /> 
           <input
             type="password"
             value={password}
@@ -67,6 +88,7 @@ function Login() {
           >
             Login
           </button>
+         
         </form>
 
         <div className="mt-8 text-center">
@@ -75,8 +97,10 @@ function Login() {
             Signup Page
           </Link>
         </div>
+      
       </div>
-    </div>
+     
+    </div>   
   );
 }
 
