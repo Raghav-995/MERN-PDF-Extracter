@@ -35,7 +35,7 @@ This is a simple web application for managing PDF files. Users can upload, view,
 
 5. Start the frontend development server using `npm start` in the frontend directory.
 
-6. Access the application in your web browser at https://frontend-part-pdf.vercel.app/
+6. Access the application in your web browser at https://mern-pdf-extracter.vercel.app
 
 
 ## Usage
@@ -62,10 +62,6 @@ This is a simple web application for managing PDF files. Users can upload, view,
 - ![Screenshot (573)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/52baf70b-7030-443b-aea5-a5e8b7af6020)
 - here on scroll down we can see the page number with checkbox to toggle and untoggle,select what pages you want to select and extract from this pdf file.
 - ![Screenshot (575)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/d5973e42-c530-4679-a44a-9f0662949e8b)
-- After selecting the pages click on to button Extract & Download which downloads the new pdf file you have selected.
-- ![Screenshot (576)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/3363317e-7daf-4e2c-a60a-0fffee8ad328)
-- Then we have uploaded files page where you can see what you have uploaded and see the preview of each pdf file
-- ![Screenshot (577)](https://github.com/saikalyansixsixty6/full-stack-assignment-pdf-upload/assets/91243096/fb17b3fd-a874-4747-9901-76c8af33a341)
 
 
 
