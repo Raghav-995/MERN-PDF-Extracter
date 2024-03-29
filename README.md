@@ -53,13 +53,14 @@ This is a simple web application for managing PDF files. Users can upload, view,
 
 ## Preview of this app
 - Signup with name,email and password
-- 
+- ![Screenshot (116)](https://github.com/Raghav-995/MERN-PDF-Extracter/assets/139675343/42f51d25-977a-44e9-85b3-325375db3a8e)
 - Then login into account
-- 
+- ![Screenshot (117)](https://github.com/Raghav-995/MERN-PDF-Extracter/assets/139675343/cf9e917b-15d5-45b9-ac46-3be6b225e546)
+
 - Now we can see visual representation of pdf and click on to upload which stores pdf file on server
--
+![Screenshot (118)](https://github.com/Raghav-995/MERN-PDF-Extracter/assets/139675343/200d085f-9179-467f-b272-0028eb14682a)
 - here on scroll down we can see the page number with checkbox to toggle and untoggle,select what pages you want to select and extract from this pdf file.
-- 
+![Screenshot (119)](https://github.com/Raghav-995/MERN-PDF-Extracter/assets/139675343/140218e2-310d-4bc6-a947-e00e5571d613)
 
 
 
