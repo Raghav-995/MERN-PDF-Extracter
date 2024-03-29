@@ -14,7 +14,7 @@ function Login() {
 
     if (email.length === 0 || !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
       
-      alert('Invalid email! Please enter a valid email.');
+      alert('Invalid email! Please enter a valid email');
       toast.success('Error in email');
       return
     }
